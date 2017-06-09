@@ -111,6 +111,9 @@ describe("Dates", function(){
     // meridian
     expect(I18n.strftime(date, "%p")).toEqual("PM");
 
+    // meridian uppercase
+    expect(I18n.strftime(date, "%P")).toEqual("pm");
+
     // seconds
     expect(I18n.strftime(date, "%S")).toEqual("44");
 

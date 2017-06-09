@@ -835,7 +835,8 @@
     format = format.replace("%-m", month);
     format = format.replace("%M", padding(mins));
     format = format.replace("%-M", mins);
-    format = format.replace("%p", meridianOptions[meridian]);
+    format = format.replace("%p", meridianOptions[meridian].toUpperCase());
+    format = format.replace("%P", meridianOptions[meridian]);
     format = format.replace("%S", padding(secs));
     format = format.replace("%-S", secs);
     format = format.replace("%w", weekDay);
